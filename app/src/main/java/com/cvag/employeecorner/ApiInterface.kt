@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET( "employee.json")
+    @GET( "data.json")
     fun getData(): Call<List<Data>>
 }

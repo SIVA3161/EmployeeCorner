@@ -1,9 +1,10 @@
 package com.cvag.employeecorner
 
-import android.content.ContentValues.TAG
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -12,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.lang.StringBuilder
 
 
-const val BASE_URL = "https://employeedata-55c23-default-rtdb.firebaseio.com/"
+const val BASE_URL = "https://employeedataonly-default-rtdb.firebaseio.com/"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,10 +38,11 @@ class MainActivity : AppCompatActivity() {
                 val myStringBuilder = StringBuilder()
 
                 for( myData in responseBody){
-                    myStringBuilder.append(myData.id)
+                    myStringBuilder.append("${myData.employee_age}"+" Years Old" )
                     myStringBuilder.append("\n")
                 }
-               txtId.text = myStringBuilder
+
+                txt1.text = myStringBuilder
 
             }
 
