@@ -8,11 +8,30 @@
     tools:viewBindingIgnore="true">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_employees"
-        android:layout_width="409dp"
-        android:layout_height="match_parent"
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:searchHintIcon="@mipmap/ic_launcher_round"
+        android:queryHint="Type here..."
+        android:background="@drawable/custom_search_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_employees"
+        android:layout_width="406dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

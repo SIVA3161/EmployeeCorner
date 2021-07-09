@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         linearLayoutManager = LinearLayoutManager(this)
         recyclerview_employees.layoutManager = linearLayoutManager
 
+
         getMyData()
     }
 
@@ -62,6 +63,8 @@ class MainActivity : AppCompatActivity() {
                 myAdapter = MyAdapter(baseContext,responseBody)
                 myAdapter.notifyDataSetChanged()
                 recyclerview_employees.adapter = myAdapter
+
+
 
 
 
