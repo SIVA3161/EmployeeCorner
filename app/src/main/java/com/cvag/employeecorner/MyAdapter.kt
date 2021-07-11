@@ -15,7 +15,7 @@ class MyAdapter(val context: Context, val employeeList: List<Data>): RecyclerVie
             var EmpName: TextView
             var EmpAge: TextView
             var EmpSalary: TextView
-           // var  EmpImage: ImageView
+            //var  EmpImage: ImageView
 
             init {
                 EmpName = itemView.employee_name
@@ -34,7 +34,7 @@ class MyAdapter(val context: Context, val employeeList: List<Data>): RecyclerVie
         holder.EmpName.text = employeeList[position].employee_name.toString()
         holder.EmpAge.text = employeeList[position].employee_age.toString()
         holder.EmpSalary.text = employeeList[position].employee_salary.toString()
-
+        // need to implement for EmpImage View ---->
 
     }
 

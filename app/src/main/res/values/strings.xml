@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EmployeeCorner</string>
+    <string name="search_help_text">Click on Search Icon to filter the Employee names</string>
 </resources>

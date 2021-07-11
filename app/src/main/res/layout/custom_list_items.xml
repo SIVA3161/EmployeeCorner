@@ -59,6 +59,7 @@
                 android:id="@+id/empAgeText"
                 android:layout_width="63dp"
                 android:layout_height="wrap_content"
+                android:textColor="@color/teal_700"
                 android:layout_marginStart="15dp"
                 android:layout_marginRight="5dp"
                 android:gravity="center_horizontal"
