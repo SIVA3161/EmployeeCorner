@@ -12,5 +12,4 @@ Shows a list of employees ***Name*** and their ***salary***, ***age*** details f
 
 
 #### Need to implement in future:
-  1.**Employee Profile Image in the left side Image view holder added on 12thJuly2021 @commit:14**
-  2.Search Functionality should be added. While searching the Employee name, it should filter out the respective Employee item
+   1.Search Functionality should be added. While searching the Employee name, it should filter out the respective Employee item
